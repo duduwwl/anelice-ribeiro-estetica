@@ -157,12 +157,17 @@
     .booking-teaser-grid { display:flex; align-items:center; justify-content:space-between; gap:30px; }
     .booking-teaser h2 { margin:7px 0 0; font-size:clamp(2rem,4vw,3.5rem); line-height:1; font-weight:500; }
     @media (max-width:620px) { .photo-logo { width:112px; height:39px; } .hero-backdrop { width:85%; height:68%; } .story-images .portrait { height:430px; } .booking-teaser-grid { display:block; } .booking-teaser-grid .button { margin-top:22px; } .gallery-grid { grid-template-columns:1fr 1fr; grid-template-rows:210px 140px 165px; } .gallery-grid img:first-child { grid-column:1; grid-row:1 / span 2; } .gallery-grid .gallery-detail { grid-column:2; grid-row:1 / span 2; } .gallery-grid .gallery-caption { grid-column:1 / span 2; grid-row:3; } }
-  </style>
+     /* Final visual refinements: the navbar carries the standalone mark, while the carousel keeps only its two photos. */
+     .brand-logo { width:148px; height:45px; display:block; object-fit:contain; object-position:left center; }
+     .hero-art::before { display:none; }
+     .gallery-grid img:first-child { object-fit:contain; object-position:center; background:#efe7e2; }
+     @media (max-width:620px) { .brand-logo { width:112px; height:39px; } }
+   </style>
 </head>
 <body>
   <div class="topbar"><div class="wrap"><span>Lavras · MG</span><span>Segunda a sexta · 08h às 18h</span></div></div>
   <header><div class="wrap"><nav>
-    <a href="#inicio" class="brand"><span class="photo-logo" role="img" aria-label="Logo Anelice Ribeiro Estética"></span><span><span class="brand-name">Anelice Ribeiro</span><small class="brand-sub">Estética</small></span></a>
+     <a href="#inicio" class="brand"><img class="brand-logo" src="assets/logo.png" alt="Logo Anelice Ribeiro Estética"></a>
     <div class="navlinks"><a href="agenda.html">Agenda</a><a href="#espaco">O espaço</a></div>
   </nav></div></header>
 
