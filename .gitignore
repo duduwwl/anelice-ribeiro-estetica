@@ -1,0 +1,6 @@
+outputs/
+work/
+.openai/
+.sites-checkout/
+.sites-runtime/
+*.tar.gz

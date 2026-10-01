@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2e2522" />
+  <meta name="description" content="Anelice Ribeiro Estética — cuidados faciais, limpeza de pele, peeling, manchas e acne em Lavras." />
+  <title>Anelice Ribeiro Estética | Lavras</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%232e2522'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='35' fill='%23d7a7a0'%3EAR%3C/text%3E%3C/svg%3E" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+    :root { --ink:#2e2522; --muted:#766965; --cream:#f8f4ef; --paper:#fffdfa; --rose:#d7a7a0; --rose-deep:#aa7069; --gold:#b79762; --line:#e8ddd5; --green:#4f755f; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--cream); font-family:'Manrope',sans-serif; font-size:16px; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    button, input, select, textarea { font:inherit; }
+    button { cursor:pointer; }
+    .wrap { max-width:1180px; margin:0 auto; padding:0 28px; }
+    .eyebrow { color:var(--rose-deep); font-size:.78rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+    .serif { font-family:'DM Serif Display',Georgia,serif; }
+    .topbar { background:var(--ink); color:#fffdfa; font-size:.78rem; }
+    .topbar .wrap { min-height:35px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .topbar span:last-child { color:#e6cbc5; }
+    header { position:sticky; top:0; z-index:30; background:rgba(248,244,239,.92); backdrop-filter:blur(14px); border-bottom:1px solid rgba(232,221,213,.75); }
+    nav { min-height:77px; display:flex; align-items:center; justify-content:space-between; gap:30px; }
+    .brand { display:flex; align-items:center; gap:13px; }
+    .monogram { width:42px; height:42px; display:grid; place-items:center; border:1px solid var(--rose-deep); border-radius:50%; font-family:'DM Serif Display',Georgia,serif; font-size:1rem; color:var(--rose-deep); }
+    .brand-name { font-size:.88rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+    .brand-sub { color:var(--muted); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; }
+    .navlinks { display:flex; align-items:center; gap:28px; color:var(--muted); font-size:.86rem; }
+    .navlinks a:hover { color:var(--rose-deep); }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:4px; padding:13px 19px; background:var(--ink); color:#fff; font-size:.87rem; font-weight:700; transition:transform .2s, background .2s; }
+    .button:hover { transform:translateY(-2px); background:#4a3934; }
+    .button.rose { background:var(--rose-deep); }
+    .button.rose:hover { background:#8e5a54; }
+    .button.outline { color:var(--ink); background:transparent; border:1px solid var(--ink); }
+    .button.outline:hover { background:var(--ink); color:#fff; }
+    .hero { padding:74px 0 82px; background:radial-gradient(circle at 88% 14%,#ead1cb 0 10%,transparent 30%), var(--cream); overflow:hidden; }
+    .hero-grid { display:grid; grid-template-columns:1fr .92fr; align-items:center; gap:74px; }
+    .hero h1 { max-width:650px; margin:12px 0 20px; font-size:clamp(2.7rem,6vw,5.7rem); line-height:1.02; letter-spacing:-.045em; font-weight:500; }
+    .hero h1 em { color:var(--rose-deep); }
+    .hero-copy { max-width:525px; color:var(--muted); font-size:1.07rem; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin:31px 0 35px; }
+    .trust { display:flex; align-items:center; gap:16px; color:var(--muted); font-size:.8rem; }
+    .trust-avatars { display:flex; }
+    .trust-avatars img { width:32px; height:32px; margin-right:-8px; object-fit:cover; border:2px solid var(--cream); border-radius:50%; }
+    .hero-art { position:relative; min-height:520px; }
+    .hero-art::before { content:""; position:absolute; inset:26px 12px 0 58px; border:1px solid var(--rose); border-radius:140px 140px 10px 10px; transform:rotate(4deg); }
+    .hero-photo { position:absolute; inset:0 35px 0 0; height:520px; object-fit:cover; border-radius:140px 140px 8px 8px; box-shadow:18px 22px 0 rgba(215,167,160,.42); }
+    .hero-note { display:none; }
+    .hero-note span { display:block; margin-top:8px; color:var(--muted); font:500 .7rem 'DM Sans',sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+    section { padding:102px 0; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:35px; }
+    .section-head h2 { margin:8px 0 0; max-width:650px; font-size:clamp(2.1rem,4vw,3.65rem); line-height:1.04; font-weight:500; letter-spacing:-.035em; }
+    .section-head p { max-width:360px; color:var(--muted); margin:0; }
+    .services { background:var(--paper); }
+    .service-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:13px; }
+    .service-card { min-height:285px; padding:26px 22px; display:flex; flex-direction:column; justify-content:space-between; background:var(--cream); border:1px solid var(--line); transition:transform .2s, box-shadow .2s; }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 18px 35px rgba(89,61,53,.1); }
+    .service-card:nth-child(2) { background:#f3e6e2; }
+    .service-card:nth-child(3) { background:#efe8dd; }
+    .service-card:nth-child(4) { background:#eee9e4; }
+    .service-icon { width:36px; height:36px; display:grid; place-items:center; border:1px solid var(--rose-deep); border-radius:50%; color:var(--rose-deep); font-size:1.1rem; }
+    .service-card h3 { margin:22px 0 7px; font-family:'DM Serif Display',Georgia,serif; font-size:1.55rem; font-weight:500; }
+    .service-card p { color:var(--muted); font-size:.9rem; line-height:1.55; margin:0; }
+    .service-foot { display:flex; justify-content:space-between; align-items:center; gap:8px; padding-top:18px; color:var(--rose-deep); font-size:.78rem; font-weight:700; }
+    .story { padding-top:80px; }
+    .story-grid { display:grid; grid-template-columns:.92fr 1.08fr; gap:74px; align-items:center; }
+    .story-images { display:grid; grid-template-columns:1fr .68fr; gap:14px; align-items:end; }
+    .story-images img { width:100%; object-fit:cover; }
+    .story-images .portrait { height:480px; }
+    .story-images .detail { height:330px; margin-bottom:48px; }
+    .story-copy h2 { margin:10px 0 18px; font-size:clamp(2.2rem,4vw,4rem); line-height:1.05; font-weight:500; letter-spacing:-.04em; }
+    .story-copy p { color:var(--muted); max-width:480px; }
+    .story-list { display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:480px; margin:28px 0; }
+    .story-list div { padding:15px 0; border-top:1px solid var(--line); font-size:.88rem; }
+    .story-list strong { display:block; margin-bottom:4px; font-family:'DM Serif Display',Georgia,serif; font-size:1.2rem; font-weight:500; }
+    .gallery { padding-top:35px; }
+    .gallery-grid { display:grid; grid-template-columns:1.28fr .72fr .72fr; grid-template-rows:260px 180px; gap:12px; }
+    .gallery-grid img { width:100%; height:100%; object-fit:cover; }
+    .gallery-grid img:first-child { grid-row:span 2; }
+    .gallery-caption { padding:24px; background:var(--ink); color:#fff; display:flex; flex-direction:column; justify-content:end; }
+    .gallery-caption .eyebrow { color:var(--rose); }
+    .gallery-caption h3 { margin:7px 0 0; font:500 1.9rem/1.1 'DM Serif Display',Georgia,serif; }
+    .booking { background:var(--ink); color:#fff; }
+    .booking .section-head p { color:#d8c6c1; }
+    .booking .eyebrow { color:var(--rose); }
+    .booking-grid { display:grid; grid-template-columns:.82fr 1.18fr; gap:46px; align-items:start; }
+    .booking-intro h2 { margin:8px 0 18px; font-size:clamp(2.25rem,4vw,4.2rem); line-height:1.03; font-weight:500; letter-spacing:-.04em; }
+    .booking-intro p { color:#d8c6c1; max-width:350px; }
+    .schedule-note { margin-top:40px; padding:18px 19px; border:1px solid rgba(215,167,160,.35); color:#ead9d5; font-size:.84rem; }
+    .schedule-note strong { display:block; color:#fff; margin-bottom:4px; }
+    .booking-form { padding:30px; background:var(--paper); color:var(--ink); }
+    .form-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .field { display:flex; flex-direction:column; gap:6px; }
+    .field.full { grid-column:1/-1; }
+    .field label { font-size:.78rem; font-weight:700; color:var(--muted); }
+    .field input, .field select, .field textarea { width:100%; border:1px solid var(--line); border-radius:3px; background:#fff; padding:12px 13px; color:var(--ink); outline:none; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color:var(--rose-deep); box-shadow:0 0 0 3px rgba(170,112,105,.13); }
+    .field textarea { min-height:83px; resize:vertical; }
+    .date-help { color:var(--muted); font-size:.74rem; margin-top:2px; }
+    .time-label { display:flex; justify-content:space-between; align-items:center; margin:21px 0 10px; font-weight:700; font-size:.78rem; color:var(--muted); }
+    .time-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+    .time-btn { border:1px solid var(--line); background:#fff; padding:10px 4px; color:var(--ink); font-size:.8rem; }
+    .time-btn:hover, .time-btn.selected { border-color:var(--rose-deep); background:#f3e4e1; color:var(--rose-deep); font-weight:700; }
+    .time-btn:disabled { color:#b9aba6; background:#f1ece8; cursor:not-allowed; text-decoration:line-through; }
+    .form-submit { width:100%; margin-top:20px; }
+    .form-message { display:none; margin-top:15px; padding:12px 14px; background:#e4f0e6; color:#2d5b3d; font-size:.84rem; }
+    .form-message.show { display:block; }
+    .admin { background:#f1e9e4; }
+    .admin-gate { max-width:720px; margin:0 auto; }
+    .admin-card { background:var(--paper); border:1px solid var(--line); padding:28px; }
+    .admin-card h2 { margin:7px 0 9px; font:500 2.4rem/1.1 'Playfair Display',Georgia,serif; }
+    .admin-card > p { color:var(--muted); margin-top:0; }
+    .admin-login { display:flex; gap:10px; margin-top:20px; }
+    .admin-login input { flex:1; border:1px solid var(--line); padding:12px; }
+    .login-hint { display:block; color:var(--muted); font-size:.75rem; margin-top:9px; }
+    .admin-panel { display:none; margin-top:22px; }
+    .admin-panel.show { display:block; }
+    .admin-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:18px 0; }
+    .stat { padding:15px; background:var(--cream); border:1px solid var(--line); }
+    .stat b { display:block; font:500 1.7rem 'Playfair Display',Georgia,serif; }
+    .stat span { color:var(--muted); font-size:.74rem; }
+    .agenda-list { display:grid; gap:8px; }
+    .appointment { display:grid; grid-template-columns:105px 1fr auto; gap:15px; align-items:center; padding:16px; border:1px solid var(--line); background:#fff; }
+    .appointment-date { color:var(--rose-deep); font-weight:700; font-size:.85rem; }
+    .appointment-date small { display:block; color:var(--muted); font-weight:500; }
+    .appointment-info strong { display:block; }
+    .appointment-info span { color:var(--muted); font-size:.8rem; }
+    .delete-btn { border:0; background:transparent; color:#a95e58; font-size:.75rem; }
+    footer { padding:45px 0 25px; background:var(--ink); color:#fff; }
+    .footer-grid { display:flex; justify-content:space-between; gap:30px; padding-bottom:38px; border-bottom:1px solid rgba(255,255,255,.14); }
+    .footer-brand { font:500 1.8rem 'DM Serif Display',Georgia,serif; }
+    .footer-copy { max-width:280px; color:#d8c6c1; font-size:.84rem; }
+    .footer-links { display:flex; gap:18px; align-items:start; color:#ead9d5; font-size:.84rem; }
+    .footer-bottom { display:flex; justify-content:space-between; gap:20px; padding-top:20px; color:#aa9994; font-size:.73rem; }
+    .admin-link { border:0; background:none; color:#aa9994; padding:0; font-size:.73rem; }
+    .toast { position:fixed; right:22px; bottom:22px; z-index:50; transform:translateY(140%); transition:transform .3s; background:var(--ink); color:#fff; padding:15px 18px; box-shadow:0 12px 35px rgba(0,0,0,.2); font-size:.84rem; }
+    .toast.show { transform:translateY(0); }
+    @media (max-width:900px) { .hero-grid,.story-grid,.booking-grid { grid-template-columns:1fr; gap:45px; } .hero-art { max-width:590px; width:100%; margin:0 auto; } .service-grid { grid-template-columns:repeat(2,1fr); } .navlinks { display:none; } .story { padding-top:70px; } }
+    @media (max-width:620px) { .wrap { padding:0 18px; } .topbar .wrap { font-size:.68rem; } .topbar span:last-child { display:none; } nav { min-height:68px; } .brand-name { font-size:.78rem; } .hero { padding:49px 0 65px; } .hero h1 { font-size:3.3rem; } .hero-art { min-height:405px; } .hero-photo { height:405px; } .hero-art::before { inset:18px 5px 0 36px; } .hero-note { right:0; bottom:16px; max-width:160px; font-size:.95rem; } section { padding:70px 0; } .section-head { display:block; } .section-head p { margin-top:16px; } .service-grid { grid-template-columns:1fr; } .service-card { min-height:230px; } .story-images .portrait { height:370px; } .story-images .detail { height:255px; margin-bottom:28px; } .story-list { gap:8px; } .gallery-grid { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:210px 140px 165px; } .gallery-grid img:first-child { grid-row:span 2; } .gallery-caption { grid-column:span 2; } .booking-form { padding:20px; } .form-grid { grid-template-columns:1fr; } .field.full { grid-column:auto; } .time-grid { grid-template-columns:repeat(3,1fr); } .admin-login { flex-direction:column; } .admin-summary { grid-template-columns:1fr; } .appointment { grid-template-columns:1fr auto; gap:8px; } .appointment-info { grid-column:1/-1; grid-row:2; } .footer-grid,.footer-bottom { display:block; } .footer-links { margin-top:20px; } .footer-bottom > * { display:block; margin-top:12px; } }
+    .service-icon svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
+    .hero-art { isolation:isolate; }
+    .photo-logo { width:148px; height:45px; display:block; border-radius:4px; background:url('assets/studio.jpg') center 32% / 100% auto no-repeat; box-shadow:inset 0 0 0 1px rgba(170,112,105,.34); }
+    .hero-art.is-reverse .hero-photo { right:0; left:28px; width:80%; height:76%; bottom:0; top:auto; border-radius:12px; z-index:1; opacity:.94; box-shadow:0 16px 38px rgba(46,37,34,.13); transform:scale(.98); }
+    .hero-art.is-reverse .hero-backdrop { inset:0 28px 0 0; width:auto; height:100%; border-radius:110px 110px 4px 4px; z-index:2; opacity:1; box-shadow:15px 16px 0 rgba(215,167,160,.42); transform:scale(1); }
+    .hero-backdrop { position:absolute; z-index:-1; right:0; bottom:0; width:80%; height:76%; object-fit:cover; border-radius:12px; opacity:.92; filter:saturate(.72) contrast(.94); box-shadow:0 16px 38px rgba(46,37,34,.13); }
+    .hero-photo { z-index:2; }
+    .story-images .portrait { width:100%; height:560px; margin:0; border-radius:3px; box-shadow:16px 17px 0 rgba(215,167,160,.28); }
+    .story-images { grid-template-columns:1fr; }
+    .gallery-grid { grid-template-columns:1.28fr .72fr; grid-template-rows:260px 180px; }
+    .gallery-grid img:first-child { grid-column:1; grid-row:1; }
+    .gallery-grid .gallery-detail { grid-column:2; grid-row:1 / span 2; object-position:50% 36%; }
+    .gallery-grid .gallery-caption { grid-column:1; grid-row:2; }
+    .booking-teaser { padding:68px 0; }
+    .booking-teaser-grid { display:flex; align-items:center; justify-content:space-between; gap:30px; }
+    .booking-teaser h2 { margin:7px 0 0; font-size:clamp(2rem,4vw,3.5rem); line-height:1; font-weight:500; }
+    @media (max-width:620px) { .photo-logo { width:112px; height:39px; } .hero-backdrop { width:85%; height:68%; } .story-images .portrait { height:430px; } .booking-teaser-grid { display:block; } .booking-teaser-grid .button { margin-top:22px; } .gallery-grid { grid-template-columns:1fr 1fr; grid-template-rows:210px 140px 165px; } .gallery-grid img:first-child { grid-column:1; grid-row:1 / span 2; } .gallery-grid .gallery-detail { grid-column:2; grid-row:1 / span 2; } .gallery-grid .gallery-caption { grid-column:1 / span 2; grid-row:3; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Lavras · MG</span><span>Segunda a sexta · 08h às 18h</span></div></div>
+  <header><div class="wrap"><nav>
+    <a href="#inicio" class="brand"><span class="photo-logo" role="img" aria-label="Logo Anelice Ribeiro Estética"></span><span><span class="brand-name">Anelice Ribeiro</span><small class="brand-sub">Estética</small></span></a>
+    <div class="navlinks"><a href="agenda.html">Agenda</a><a href="#espaco">O espaço</a></div>
+  </nav></div></header>
+
+  <main>
+    <section class="hero" id="inicio"><div class="wrap hero-grid">
+      <div><div class="eyebrow">Anelice Ribeiro · Estética</div><h1>Cuidados faciais com <em>leveza.</em></h1><p class="hero-copy">Limpeza de pele, peeling, manchas e acne em Lavras.</p><div class="hero-actions"><a class="button rose" href="agenda.html">Agendar meu cuidado</a></div></div>
+      <div class="hero-art"><img class="hero-backdrop" src="assets/studio.jpg" alt="Sala de estética com a logo Anelice Ribeiro"/><img class="hero-photo" src="assets/anelice.jpg" alt="Anelice Ribeiro no espaço de estética"/></div>
+    </div></section>
+
+    <section class="services" id="servicos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Cuidados faciais</div><h2>Escolha o seu momento.</h2></div><p>Protocolos pensados para a sua pele.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 6.7 6 10.2A6 6 0 1 1 6 13.2C6 9.7 9 7 12 3Z"/></svg></div><h3>Limpeza de pele</h3><p>Purifica, desobstrui e devolve frescor à pele.</p></div></article>
+        <article class="service-card"><div><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17c4-7 8-10 16-10M5 20c4-3 7-6 9-11M7 8l2-2m5 12 2-2"/></svg></div><h3>Peeling</h3><p>Renova a textura e ilumina com suavidade.</p></div></article>
+        <article class="service-card"><div><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 5v14M5 12h14"/></svg></div><h3>Manchas</h3><p>Cuidados progressivos para uma pele mais uniforme.</p></div></article>
+        <article class="service-card"><div><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="14" r="1"/><path d="M8 15c2 1 5 1 8-1"/></svg></div><h3>Acne</h3><p>Equilibra a pele e acompanha cada fase.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="story" id="espaco"><div class="wrap story-grid"><div class="story-images"><img class="detail portrait" src="assets/detail.jpg" alt="Ambiente acolhedor do studio Anelice Ribeiro"/></div><div class="story-copy"><div class="eyebrow">O espaço</div><h2>Um ambiente claro, calmo e acolhedor.</h2><p>O studio foi pensado para que o cuidado comece antes do procedimento: luz suave, linhas limpas, materiais aconchegantes e uma atmosfera tranquila para você desacelerar.</p><div class="story-list"><div><strong>Conforto</strong>Um tempo só seu.</div><div><strong>Cuidado</strong>Detalhes que acolhem.</div></div><a class="button" href="agenda.html">Conhecer a agenda</a></div></div></section>
+
+    <section class="gallery"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Pele cuidada</div><h2>Resultados que aparecem no espelho.</h2></div></div><div class="gallery-grid"><img src="assets/before-after.jpg" alt="Antes e depois de uma limpeza de pele"/><img class="gallery-detail" src="assets/skin-care-2.jpg" alt="Detalhe de pele cuidada"/><div class="gallery-caption"><div class="eyebrow">Anelice Ribeiro Estética</div><h3>“Consistência para sua pele.”</h3></div></div></div></section>
+
+    <section class="booking booking-teaser"><div class="wrap booking-teaser-grid"><div><div class="eyebrow">Agenda</div><h2>Seu momento começa aqui.</h2></div><a class="button rose" href="agenda.html">Abrir agenda</a></div></section>
+  </main>
+  <footer><div class="wrap"><div class="footer-grid"><div><div class="footer-brand">Anelice Ribeiro</div><p class="footer-copy">Estética facial em Lavras.</p></div><div class="footer-links"><a href="https://www.instagram.com/aneliceribeiroestetica/" target="_blank" rel="noreferrer">Instagram</a><a href="agenda.html#booking">WhatsApp</a></div></div><div class="footer-bottom"><span>© 2026 Anelice Ribeiro Estética</span><a class="admin-link" href="gerencia.html" aria-label="Área da gerência" title="Área da gerência">⚙ Área da gerência</a></div></div></footer>
+  <div class="toast" id="toast"></div>
+  <script>
+    const PASSWORD = 'anelice2026';
+    const SLOTS = ['08:00','09:00','10:00','11:00','13:00','14:00','15:00','16:00','17:00'];
+    const seed = [{id:'demo-1',name:'Marina Souza',phone:'(35) 98888-1122',service:'Limpeza de pele',date:nextWeekday(1),time:'10:00',notes:'Primeiro atendimento'}];
+    const getAppointments = () => JSON.parse(localStorage.getItem('aneliceAppointments') || 'null') || seed;
+    const saveAppointments = list => localStorage.setItem('aneliceAppointments', JSON.stringify(list));
+    if (!localStorage.getItem('aneliceAppointments')) saveAppointments(seed);
+    const dateInput = document.getElementById('date');
+    const timeGrid = document.getElementById('timeGrid');
+    const timeInput = document.getElementById('time');
+    const timeSelected = document.getElementById('timeSelected');
+    function nextWeekday(offset=0) { const d = new Date(); d.setHours(12,0,0,0); while(offset > 0){ d.setDate(d.getDate()+1); if(d.getDay()>0 && d.getDay()<6) offset--; } if(d.getDay()===0)d.setDate(d.getDate()+1); if(d.getDay()===6)d.setDate(d.getDate()+2); return d.toISOString().slice(0,10); }
+    function formatDate(date) { return new Date(date+'T12:00:00').toLocaleDateString('pt-BR',{weekday:'short',day:'2-digit',month:'2-digit'}).replace('.',''); }
+    function isWeekday(value) { if (!value) return false; const day = new Date(value+'T12:00:00').getDay(); return day > 0 && day < 6; }
+    if (dateInput) {
+    dateInput.min = nextWeekday(0); dateInput.value = nextWeekday(1);
+    dateInput.addEventListener('change', () => { if (!isWeekday(dateInput.value)) { dateInput.value=''; showToast('Escolha uma data de segunda a sexta.'); } renderSlots(); });
+    function renderSlots() { const booked = getAppointments().filter(a=>a.date===dateInput.value).map(a=>a.time); timeGrid.innerHTML=''; timeInput.value=''; timeSelected.textContent='Nenhum selecionado'; SLOTS.forEach(slot=>{ const b=document.createElement('button'); b.type='button'; b.className='time-btn'; b.textContent=slot; b.disabled=booked.includes(slot); b.title=b.disabled?'Horário já reservado':''; b.addEventListener('click',()=>{ document.querySelectorAll('.time-btn').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); timeInput.value=slot; timeSelected.textContent=slot; }); timeGrid.appendChild(b); }); }
+    renderSlots();
+    document.getElementById('bookingForm').addEventListener('submit', e=>{ e.preventDefault(); if(!timeInput.value){ showToast('Escolha um horário para continuar.'); return; } const fd=new FormData(e.target); const list=getAppointments(); const appointment={id:Date.now().toString(),name:fd.get('name').trim(),phone:fd.get('phone').trim(),service:fd.get('service'),date:fd.get('date'),time:fd.get('time'),notes:fd.get('notes').trim()}; if(list.some(a=>a.date===appointment.date&&a.time===appointment.time)){ showToast('Esse horário acabou de ser reservado. Escolha outro.'); renderSlots(); return; } list.push(appointment); saveAppointments(list); e.target.reset(); dateInput.value=nextWeekday(1); renderSlots(); const msg=document.getElementById('formMessage'); msg.textContent='Pedido registrado! Anelice poderá confirmar seu horário pelo WhatsApp.'; msg.classList.add('show'); document.getElementById('agenda').scrollIntoView({behavior:'smooth'}); });
+    document.getElementById('adminLogin').addEventListener('click',()=>{ if(document.getElementById('adminPassword').value===PASSWORD){ document.getElementById('adminPanel').classList.add('show'); renderAdmin(); showToast('Agenda desbloqueada para demonstração.'); } else showToast('Senha incorreta.'); });
+    function renderAdmin(){ const list=getAppointments().sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)); document.getElementById('statTotal').textContent=list.length; const today=new Date(); const monday=new Date(today); monday.setDate(today.getDate()-(today.getDay()+6)%7); const week=monday.toISOString().slice(0,10); document.getElementById('statWeek').textContent=list.filter(a=>a.date>=week).length; document.getElementById('statNext').textContent=list[0]?.time || '—'; const el=document.getElementById('agendaList'); el.innerHTML=list.length?list.map(a=>`<div class="appointment"><div class="appointment-date">${formatDate(a.date)}<small>${a.time}</small></div><div class="appointment-info"><strong>${escapeHtml(a.name)}</strong><span>${escapeHtml(a.service)} · ${escapeHtml(a.phone)}${a.notes?' · '+escapeHtml(a.notes):''}</span></div><button class="delete-btn" onclick="removeAppointment('${a.id}')">Remover</button></div>`).join(''):'<p style="color:var(--muted)">Nenhum agendamento registrado.</p>'; }
+    window.removeAppointment = id => { saveAppointments(getAppointments().filter(a=>a.id!==id)); renderAdmin(); renderSlots(); showToast('Agendamento removido.'); };
+    function escapeHtml(s){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+    function showToast(text){const t=document.getElementById('toast');if(!t)return;t.textContent=text;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
+    }
+    const heroArt=document.querySelector('.hero-art');
+    if(heroArt){setInterval(()=>heroArt.classList.toggle('is-reverse'),4500)}
+  </script>
+</body>
+</html>
