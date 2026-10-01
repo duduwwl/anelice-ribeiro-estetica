@@ -160,7 +160,7 @@
      /* Final visual refinements: the navbar carries the standalone mark, while the carousel keeps only its two photos. */
      .brand-logo { width:148px; height:45px; display:block; object-fit:contain; object-position:left center; }
      .hero-art::before { display:none; }
-     .gallery-grid img:first-child { object-fit:contain; object-position:center; background:#efe7e2; }
+     .gallery-grid img:first-child { object-fit:cover; object-position:center; background:transparent; }
      .hero-grid { grid-template-columns:.82fr 1.18fr; gap:58px; }
      .hero h1 { max-width:560px; font-size:clamp(2.35rem,4.8vw,4.65rem); line-height:1.05; letter-spacing:-.035em; font-weight:400; }
      .hero-art { min-height:580px; }
@@ -170,7 +170,6 @@
    </style>
 </head>
 <body>
-  <div class="topbar"><div class="wrap"><span>Lavras · MG</span><span>Segunda a sexta · 08h às 18h</span></div></div>
   <header><div class="wrap"><nav>
      <a href="#inicio" class="brand"><img class="brand-logo" src="assets/logo.png" alt="Logo Anelice Ribeiro Estética"></a>
     <div class="navlinks"><a href="agenda.html">Agenda</a><a href="#espaco">O espaço</a></div>
@@ -179,7 +178,7 @@
   <main>
     <section class="hero" id="inicio"><div class="wrap hero-grid">
       <div><div class="eyebrow">Anelice Ribeiro · Estética</div><h1>Cuidados faciais com <em>leveza.</em></h1><p class="hero-copy">Limpeza de pele, peeling, manchas e acne em Lavras.</p><div class="hero-actions"><a class="button rose" href="agenda.html">Agendar meu cuidado</a></div></div>
-      <div class="hero-art"><img class="hero-photo" src="assets/anelice.jpg" alt="Anelice Ribeiro no espaço de estética"/></div>
+      <div class="hero-art"><img class="hero-photo" src="assets/anelice-enhanced.png" alt="Anelice Ribeiro no espaço de estética"/></div>
     </div></section>
 
     <section class="services" id="servicos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Cuidados faciais</div><h2>Escolha o seu momento.</h2></div><p>Protocolos pensados para a sua pele.</p></div>
